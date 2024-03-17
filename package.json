@@ -23,6 +23,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://namnika.github.io/web-development-assignment-solution/",
   "browserslist": {
     "production": [
       ">0.2%",
