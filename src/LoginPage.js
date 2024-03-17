@@ -10,10 +10,7 @@ export default function LoginPage() {
         <input type="email" placeholder="E-Mail" className="email" />
         <input type="password" placeholder="Password" className="password" />
         <button>Login</button>
-
-        <a href="#link" className="forgot-link">
-          <p>Forgot password?</p>
-        </a>
+        <p>Forgot password?</p>
       </div>
     </div>
   );
