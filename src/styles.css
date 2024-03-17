@@ -9,19 +9,13 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 97.5vh;
   background: transparent linear-gradient(180deg, #000000 0%, #000e09 100%) 0%
     0% no-repeat padding-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Main Page
--------------------------------------------------
-*/
-
-.wrapper{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -30,4 +24,55 @@ body {
 -------------------------------------------------
 */
 
+.login-wrapper{
+  width: 180px;
+  margin: 0 auto;
+}
 
+.login-input{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+h6 {
+  margin-top: 25px;
+  font: normal normal normal 16px/21px Mulish;
+  letter-spacing: 0.02px;
+  color: #36a546cc;
+  opacity: 1;
+}
+
+input {
+  width: 238px;
+  height: 42px;
+  border-radius: 50px;
+  background: #1f191966 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 3px #fffdfd40, 3px 3px 3px #4a494947;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
+button {
+  width: 238px;
+  height: 42px;
+  border-radius: 50px;
+  background: transparent
+    linear-gradient(180deg, #00ff2580 0%, #000000 100%, #36a54680 100%) 0% 0%
+    no-repeat padding-box;
+  mix-blend-mode: normal;
+  border: 2px solid #8cff0026;
+  opacity: 1;
+  font: normal normal bold 16px/21px Mulish;
+  letter-spacing: 0.02px;
+  color: #ffffff8c;
+  opacity: 1;
+  cursor: pointer;
+}
+
+p {
+  font: normal normal normal 15px/20px Mulish;
+  letter-spacing: 0.02px;
+  color: #36a546;
+  opacity: 1;
+}
