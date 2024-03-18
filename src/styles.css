@@ -76,17 +76,22 @@ button {
   cursor: pointer;
 }
 
-p {
+p,
+span {
   font-size: 13px;
   color: #36a546;
-  opacity: 1;
 }
 
 /* Homepage Page
 -------------------------------------------------
 */
 
-.navbar {
+.dashboard {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
   width: 100%;
   height: 50px;
   position: absolute;
@@ -94,4 +99,50 @@ p {
   right: 10px;
   display: flex;
   justify-content: flex-end;
+}
+
+.hompage-logo {
+  position: absolute;
+  top: 100px;
+}
+
+section {
+  position: relative;
+  top: -60px;
+}
+
+label {
+  display: flex;
+  flex-wrap: wrap;
+  font: normal normal bold 18px/25px "Source Sans Pro", sans-serif;
+  letter-spacing: 0.01px;
+  border-radius: 50px;
+  color: #ffffffb3;
+  padding: 25px 20px;
+  background: #1a2c2c99 0% 0% no-repeat padding-box;
+}
+
+.productivity {
+  height: max-content;
+  display: grid;
+  grid-template-columns: 200px 100px;
+  position: relative;
+  border-radius: 50px;
+  top: 10px;
+  gap: 30px;
+  background: #5e5e5e82 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 4px 0px #00000040;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+h4 {
+  font-size: 15px;
+  margin-left: 13px;
+  letter-spacing: 0.01px;
+  color: #ffffff;
+}
+
+.prodlevel {
+  display: block;
 }
