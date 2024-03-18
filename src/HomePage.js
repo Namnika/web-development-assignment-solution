@@ -9,6 +9,7 @@ export default function HomePage() {
     <div className="dashboard">
       <nav>
         <img
+          style={{ cursor: "pointer" }}
           src={UserProfile}
           width={40}
           height={40}
