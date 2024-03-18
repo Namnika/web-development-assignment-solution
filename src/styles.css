@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  height: 130vh;
+  height: 100vh;
 
   background: transparent linear-gradient(180deg, #000000 0%, #000e09 100%) 0%
     0% no-repeat padding-box;
@@ -28,8 +28,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .login-wrapper {
-    overflow: hidden;
-    width: 180px;
+    width: 200px;
     margin: 0 auto;
   }
 
