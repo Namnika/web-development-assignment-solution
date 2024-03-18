@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import UserProfile from "./images/Group 46.png";
 import UserProfile2 from "./images/Group 46@2x.png";
 import MoptroLogo from "./images/moptro logo.png";
 import MoptroLogo2 from "./images/moptro logo@2x.png";
 import { productivity } from "./utils/Productivity";
+import { useState } from "react";
 
 export default function HomePage() {
+  const [isDashboardVisible, setDashboardVisible] = useState(false);
+
   return (
     <div className="dashboard">
       <nav>
@@ -18,14 +22,14 @@ export default function HomePage() {
           srcSet={UserProfile2}
         />
       </nav>
-
-      <img
+      <Link
+        onClick={() => setDashboardVisible(true)}
+        to="/home"
         className="hompage-logo"
-        src={MoptroLogo}
-        alt="Moptro Logo"
-        srcSet={MoptroLogo2}
-      />
-      <Dashboard productivity={productivity} />
+      >
+        <img src={MoptroLogo} alt="Moptro Logo" srcSet={MoptroLogo2} />
+      </Link>
+      {isDashboardVisible ? <Dashboard products={productivity} /> : null}
     </div>
   );
 }
