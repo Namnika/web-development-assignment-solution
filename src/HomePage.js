@@ -3,16 +3,15 @@ import UserProfile2 from "./images/Group 46@2x.png";
 export default function HomePage() {
   return (
     <div>
-      <nav>
+      <nav className="navbar">
         <img
           src={UserProfile}
-          width={200}
-          height={200}
+          width={40}
+          height={40}
           alt="User Profile"
           srcSet={UserProfile2}
         />
       </nav>
-      <p>This is Home Screen</p>
     </div>
   );
 }
