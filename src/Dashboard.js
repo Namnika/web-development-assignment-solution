@@ -7,10 +7,10 @@ export default function Dashboard({ products }) {
           products.map((prod) => {
             return (
               <>
-                <div className="prodlevel">
+                <div key={prod.id} className="prodlevel">
                   <h4>{prod.prodname}</h4>
                   <div
-                    class="progress"
+                    className="progress"
                     role="progressbar"
                     aria-label="Basic example"
                     aria-valuenow="25"
@@ -18,7 +18,7 @@ export default function Dashboard({ products }) {
                     aria-valuemax="100"
                   >
                     <div
-                      class="progress-bar"
+                      className="progress-bar"
                       style={{
                         width: `${prod.prodlevel}`,
                         backgroundColor: "#36A546",
