@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 130vh;
 
   background: transparent linear-gradient(180deg, #000000 0%, #000e09 100%) 0%
     0% no-repeat padding-box;
@@ -89,6 +89,7 @@ span {
 */
 
 .dashboard {
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -110,7 +111,7 @@ nav {
 
 section {
   position: relative;
-  top: 215px;
+  margin-top: 143px;
 }
 
 label {
