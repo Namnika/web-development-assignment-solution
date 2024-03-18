@@ -81,3 +81,15 @@ p {
   color: #36a546;
   opacity: 1;
 }
+
+/* Homepage Page
+-------------------------------------------------
+*/
+
+nav {
+  position: relative;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}

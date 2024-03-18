@@ -19,7 +19,7 @@ export default function LoginPage() {
     } else if (!isValidEmail) {
       setError("Email is incorrect!");
     } else {
-      navigate("/");
+      navigate("/home");
     }
   }
 
